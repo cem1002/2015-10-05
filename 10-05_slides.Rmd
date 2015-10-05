@@ -1,0 +1,60 @@
+---
+title: 'CEM1002'
+date: "2015-10-05"
+output: beamer_presentation
+---
+
+## "Parameter", "Statistic", "Estimator"
+
+### Parameter
+
+* A parameter is a *constant* numerical property of a distribution (in our model, c.f. Bayesian statisitcs.)
+* Conventional notation: small letter, often Greek, generically $\theta$.
+
+### Statistic
+
+* Recall: a *sample* is an i.i.d. sequence of random variables $X_1,\ldots,X_n$
+* A "statistic" is *any function of a sample*, e.g. "sample mean/average": $\overline{X} = \frac{\sum_{i=1}^n X_i}{n}$
+* Statistics are *random variables*.
+
+### Estimator
+
+* An estimator for a parameter, $\theta$, is a statistic whose formula does not contain $\theta$.
+* For us there will always be a nice estimator to use.
+
+## Mean, Sample Mean, Observed Sample Mean
+
+* The "mean" is a distribution parameter.
+$$E(X) = \int xf(x)\,dx$$
+* Often denoted $\mu$ (Bad idea?)
+* In practice it is *unknown* 
+
+### Sample mean
+
+* $\overline{X}$ is a random variable. 
+* Often the best estimator for $\mu$. 
+
+### Observed sample mean
+
+* $\overline{x}$ is a number calculated from a variable in an actual dataset.
+* Can be thought of as a realization of the random variable $\overline{X}$.
+* Is used as the actual estimate of $\mu$ for a given variable.
+
+
+## Variance, Sample Variance, Observed Sample Variance
+
+* The "variance" is a distribution parameter.
+$$\text{Var}(X) = \int \left(x-E(X)\right)f(x)\,dx$$
+* Often denoted $\sigma^2$
+* In practice is *unknown*
+
+### Sample Variance
+
+$$S^2 = \frac{\sum_{i=1}^n \left(X_i - \overline{X}\right)^2}{n-1}$$
+* Is a *random variable*.
+* Often used to estimate $\sigma^2$
+
+### Observed sample variance
+
+* $s^2$ is a number calculated from a variable in an actual dataset.
+* etc., etc.
